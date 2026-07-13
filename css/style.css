@@ -1,0 +1,16 @@
+body {
+    background-color: khaki;
+}
+.text {
+    color: darkgreen;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+.margin {
+  text-align: justify;
+    max-width: 50%;
+    line-height: 1.5;
+
+    font-weight: bold;
+    
+}
