@@ -14,3 +14,23 @@ body {
     font-weight: bold;
     
 }
+
+.box {
+    border: 5px solid darkgreen;
+    padding: 20px;
+    margin: 20px auto;
+    max: width 400px;
+    background-color: rgb(201, 228, 168);
+    align-items: center;
+    border-radius: 10px;
+     display: flex;
+    justify-content: center; /* وسط افقی */
+    align-items: center;     /* وسط عمودی */
+    height: 300px;
+}
+table {
+    background-color: lightblue;
+}
+.pic:hover {
+    transform: scale(1.05) rotate(5deg);
+  }

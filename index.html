@@ -4,22 +4,28 @@
     <link rel="stylesheet" href="/css/style.css" >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Website</title>
+    <title>Hamid Khadir profolio</title>
 </head>
 <body >
-    <h1 class="text">hallo ich bin hamid</h1>
+    <h1 class="text">Hallo ich bin Hamid Khadir</h1>
      <h2>Über mich</h2>
      <p>Ich bin ein Student und interessiere mich für Programmierung und Musik.</p>
   <p>Ich habe Erfahrung in verschiedenen Programmiersprachen wie <strong> Python</strong>, Java und <em>C++</em>. Außerdem spiele ich Gitarre und Klavier.</p>
-     
-<p>mein interesse listen</p>
-  <ol type="I"> >
+ <nav>
+  <ul>
+  <li><a href="#übermich" target="_blank">mein interesse</a></li>
+  <li><a href="#fähigkeiten" target="_blank">mein fähigkeiten</a></li>
+  <li><a href="#kontakt" target="_blank">mein kontakt</a></li>
+ </ul>
+</nav>
+<p ID="fähigkeiten">mein Fähigkeiten listen</p>
+  <ol type="I"> 
     <li>Python</li>
     <li>Java</li>
     <li>C++</li>        
   </ol>
 
-<p>mein interesse listen</p>
+<p ID="übermich">mein interesse listen</p>
   <ul>
     <li>Gitarre</li>
     <li>Klavier</li> 
@@ -36,9 +42,90 @@
   </dl>
 
 
+<div class="box">
+    <figure>
+    <img  class="pic" src="images/bild.jpg"
+     alt="es ist ein Natur bild" 
+     width="300" 
+     loading="lazy">
+     <figcaption>Es ist ein Natur bild</figcaption>
+    </figure>
+   
+   </div>
 
-<A href="#kontakt">mich</A>
 
-<A href="mailto:hamid.khadir@gmail.com">Kontaktiere mich</A>
+   <table border="1" align="center" width="50%"  >
+    <caption>Meine fähigkeiten</caption>
+    <thead>
+        <tr>
+            <th scope="col">Zeit</th>
+            <th scope="col">Montag</th>
+            <th scope="col">Dienstag</th>
+            <th scope="col">Mittwoch</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>9-11</td>
+            <td>**HTML**</td>
+            <td>CSS</td>
+            <td>JavaScript</td>     
+        </tr>
+        <tr >
+            <td>11-13</td>
+            <td colspan="2"> Python</td>
+            <td >C#</td>
+           
+        </tr>
+        
+    </tbody>
+   </table>
+  
+
+   <form action="/kontakt" id="kontakt" method="post">
+      <fieldset>
+        <legend>ihren Daten</legend>
+        <label for="vorname">Vorname *</label>
+        <input type="text" name="vorname" id="vorname" required minlength="2" />
+        <label for="nachname">Nachname *</label>
+        <input
+          type="text"
+          name="nachname"
+          id="nachname"
+          required
+          minlength="2"
+        />
+        4
+        <label for="email">E-Mail-Adresse *</label>
+        <input type="email" name="email" id="email" required />
+        <label for="telefon">Telefon</label>
+        <input type="tel" name="telefon" id="telefon" />
+        <label for="geburtsdatum">Geburtsdatum</label>
+        <input type="date" name="geburtsdatum" id="geburtsdatum" />
+      </fieldset>
+      <fieldset>
+        <legend>Nachricht</legend>
+        <label for="betreff">Betreff *</label>
+        <select id="betreff" name="betreff" required>
+          <option value="" disabled selected>— Bitte wählen —</option>
+          <option value="frage">Allgemeine Frage</option>
+          <option value="angebot">Angebotsanfrage</option>
+          <option value="feedback">Feedback</option>
+          <option value="sonstiges">Sonstiges</option>
+        </select>
+        <label for="nachricht">Nachricht *</label>
+        <textarea
+          id="nachricht"
+          name="nachricht"
+          rows="6"
+          required
+          minlength="20"
+        ></textarea>
+      </fieldset>
+     
+      <button type="submit">Nachricht absenden</button>
+    </form>
+
+
 </body>
 </html>

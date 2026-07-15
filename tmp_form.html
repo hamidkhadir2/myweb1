@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/kontakt" method="post">
+      <fieldset>
+        <legend> Daten</legend>
+        <label for="vorname">Vorname *</label>
+        <input type="text" name="vorname" id="vorname" required minlength="2" />
+        <label for="name">name *</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          minlength="2"
+        />
+        
+        <label for="email">E-Mail-Adresse *</label>
+        <input type="email" name="email" id="email" required />
+         <input type="tel" name="telefon" id="telefon" />
+        <select id="betreff" name="betreff" required>
+          <option value="" disabled selected>— Bitte wählen —</option>
+          <option value="frage">Allgemeine Frage</option>
+          <option value="angebot">Angebotsanfrage</option>
+        </select>
+        <label for="nachricht">Nachricht *</label>
+        <textarea
+          id="nachricht"
+          name="nachricht"
+          rows="6"
+          required
+          minlength="20"
+        ></textarea>
+      </fieldset>
+   
+      <button type="submit">Nachricht absenden</button>
+    </form>
+  </body>
+</html>
