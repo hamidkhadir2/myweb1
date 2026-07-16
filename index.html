@@ -1,131 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="/css/style.css" >
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamid Khadir profolio</title>
-</head>
-<body >
-    <h1 class="text">Hallo ich bin Hamid Khadir</h1>
-     <h2>Über mich</h2>
-     <p>Ich bin ein Student und interessiere mich für Programmierung und Musik.</p>
-  <p>Ich habe Erfahrung in verschiedenen Programmiersprachen wie <strong> Python</strong>, Java und <em>C++</em>. Außerdem spiele ich Gitarre und Klavier.</p>
- <nav>
-  <ul>
-  <li><a href="#übermich" target="_blank">mein interesse</a></li>
-  <li><a href="#fähigkeiten" target="_blank">mein fähigkeiten</a></li>
-  <li><a href="#kontakt" target="_blank">mein kontakt</a></li>
- </ul>
-</nav>
-<p ID="fähigkeiten">mein Fähigkeiten listen</p>
-  <ol type="I"> 
-    <li>Python</li>
-    <li>Java</li>
-    <li>C++</li>        
-  </ol>
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Hamid Khadir - Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>hamid khadir</h1>
+      <p>Student mit Interesse an Programmierung und Musik</p>
+      <nav aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="#ueber-mich">Über mich</a></li>
+          <li><a href="#faehigkeiten">Fähigkeiten</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<p ID="übermich">mein interesse listen</p>
-  <ul>
-    <li>Gitarre</li>
-    <li>Klavier</li> 
-     
-  </ul>
+    <main>
+      <section id="ueber-mich">
+        <h2>Über mich</h2>
+        <figure>
+          <img
+            src="images/bild.jpg"
+            alt="Naturbild als Hintergrund für das Portfolio von Hamid Khadir"
+            width="300"
+            loading="lazy"
+          />
+          <figcaption>Hamid Khadir, Student und angehender Entwickler</figcaption>
+        </figure>
+        <p>
+          Ich bin Student und interessiere mich für Programmierung und Musik.
+          Ich erweitere meine Kenntnisse in der Webentwicklung und arbeite an
+          eigenen Projekten.
+        </p>
+        <h3>Meine Interessen</h3>
+        <ul>
+          <li>Programmierung</li>
+          <li>Webentwicklung</li>
+          <li>Gitarre</li>
+          <li>Klavier</li>
+          <li>Musik</li>
+        </ul>
+        <h3>Meine Top 3 Skills</h3>
+        <ol>
+          <li>Python</li>
+          <li>Java</li>
+          <li>C++</li>
+        </ol>
+        <p>
+          Mehr über die Grundlagen der Webentwicklung findest du bei
+          <a href="https://developer.mozilla.org/de/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>.
+        </p>
+      </section>
 
-  <dl>
-    <dt>Python</dt>
-    <dd>Eine hochlevel Programmiersprache.</dd>
-    <dt>Java</dt>
-    <dd>Eine objektorientierte Programmiersprache.</dd>
-    <dt>C++</dt>
-    <dd>Eine performante Programmiersprache.</dd>
-  </dl>
+      <section id="faehigkeiten">
+        <h2>Fähigkeiten-Übersicht</h2>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Bereich</th>
+              <th scope="col">Kenntnisstand</th>
+              <th scope="col">Schwerpunkt</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Python</th>
+              <td>Fortgeschritten</td>
+              <td>Programmierung</td>
+            </tr>
+            <tr>
+              <th scope="row">Java</th>
+              <td>Grundlagen</td>
+              <td>Objektorientierung</td>
+            </tr>
+            <tr>
+              <th scope="row">C++</th>
+              <td>Grundlagen</td>
+              <td>Performance</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
+      <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Schreib mir gerne über das folgende Formular.</p>
+        <form action="#" method="post">
+          <div>
+            <label for="name">Name*</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="email">E-Mail*</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="telefon">Telefon</label>
+            <input type="tel" id="telefon" name="telefon" />
+          </div>
+          <div>
+            <label for="betreff">Betreff*</label>
+            <input type="text" id="betreff" name="betreff" required />
+          </div>
+          <div>
+            <label for="nachricht">Nachricht*</label>
+            <textarea id="nachricht" name="nachricht" rows="6" placeholder="Deine Nachricht..." required></textarea>
+          </div>
+          <button type="submit">Absenden</button>
+        </form>
+      </section>
+    </main>
 
-<div class="box">
-    <figure>
-    <img  class="pic" src="images/bild.jpg"
-     alt="es ist ein Natur bild" 
-     width="300" 
-     loading="lazy">
-     <figcaption>Es ist ein Natur bild</figcaption>
-    </figure>
-   
-   </div>
-
-
-   <table border="2" align="center" width="50%"  >
-    <caption>Meine fähigkeiten</caption>
-    <thead>
-        <tr>
-            <th scope="col">Zeit</th>
-            <th scope="col">Montag</th>
-            <th scope="col">Dienstag</th>
-            <th scope="col">Mittwoch</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>9-11</td>
-            <td>**HTML**</td>
-            <td>CSS</td>
-            <td>JavaScript</td>     
-        </tr>
-        <tr >
-            <td>11-13</td>
-            <td colspan="2"> Python</td>
-            <td >C#</td>
-           
-        </tr>
-        
-    </tbody>
-   </table>
-  
-
-   <form action="/kontakt" id="kontakt" method="post">
-      <fieldset>
-        <legend>ihren Daten</legend>
-        <label for="vorname">Vorname *</label>
-        <input type="text" name="vorname" id="vorname" required minlength="2" />
-        <label for="nachname">Nachname *</label>
-        <input
-          type="text"
-          name="nachname"
-          id="nachname"
-          required
-          minlength="2"
-        />
-        4
-        <label for="email">E-Mail-Adresse *</label>
-        <input type="email" name="email" id="email" required />
-        <label for="telefon">Telefon</label>
-        <input type="tel" name="telefon" id="telefon" />
-        <label for="geburtsdatum">Geburtsdatum</label>
-        <input type="date" name="geburtsdatum" id="geburtsdatum" />
-      </fieldset>
-      <fieldset>
-        <legend>Nachricht</legend>
-        <label for="betreff">Betreff *</label>
-        <select id="betreff" name="betreff" required>
-          <option value="" disabled selected>— Bitte wählen —</option>
-          <option value="frage">Allgemeine Frage</option>
-          <option value="angebot">Angebotsanfrage</option>
-          <option value="feedback">Feedback</option>
-          <option value="sonstiges">Sonstiges</option>
-        </select>
-        <label for="nachricht">Nachricht *</label>
-        <textarea
-          id="nachricht"
-          name="nachricht"
-          rows="6"
-          required
-          minlength="20"
-        ></textarea>
-      </fieldset>
-     
-      <button type="submit">Nachricht absenden</button>
-    </form>
-
-
-</body>
+    <footer>
+      <p>&copy; 2026 hamid khadir</p>
+    </footer>
+  </body>
 </html>
